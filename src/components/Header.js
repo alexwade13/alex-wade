@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import pic01 from '../images/A1.jpg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -8,13 +9,12 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <span className="image header">
+          <img src={pic01} alt="" />
+        </span>
+        <h1>Alex Wade</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          New York City based Actor and Web developer
         </p>
       </div>
     </div>
@@ -26,7 +26,7 @@ const Header = props => (
               props.onOpenArticle('intro')
             }}
           >
-            Intro
+            Bio
           </button>
         </li>
         <li>
@@ -35,7 +35,7 @@ const Header = props => (
               props.onOpenArticle('work')
             }}
           >
-            Work
+            Resume
           </button>
         </li>
         <li>
@@ -44,7 +44,7 @@ const Header = props => (
               props.onOpenArticle('about')
             }}
           >
-            About
+            Media
           </button>
         </li>
         <li>

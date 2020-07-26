@@ -40,18 +40,18 @@
   > * {
     @include vendor('transition', 'opacity #{_duration(article)} ease-in-out');
     position: relative;
-    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
 
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(-3.5rem - 1px);
-      left: calc(50% - #{_size(border-width) * 1});
-      width: _size(border-width);
-      height: calc(3.5rem + 1px);
-      background: _palette(border);
-    }
+    // &:before {
+    //   content: '';
+    //   display: block;
+    //   position: absolute;
+    //   top: calc(-3.5rem - 1px);
+    //   left: calc(50% - #{_size(border-width) * 1});
+    //   width: _size(border-width);
+    //   height: calc(3.5rem + 1px);
+    //   background: _palette(border);
+    // }
   }
 
   > :first-child {
@@ -63,6 +63,7 @@
   }
 
   .logo {
+    display:none;
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
@@ -94,7 +95,8 @@
       );
       @include vendor('transition-delay', '0.25s');
       padding: 3rem 2rem;
-      max-height: 40rem;
+      max-height: 90rem;
+      max-width: 30rem;
       overflow: hidden;
 
       > :last-child {
