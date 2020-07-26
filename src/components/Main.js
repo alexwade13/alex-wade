@@ -1,10 +1,22 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+
 import pic01 from '../images/monkey_alex.jpg'
 import pic02 from '../images/turkish_soldier.jpg'
 import pic03 from '../images/pic03.jpg'
+
+import headshot01 from '../images/A1.jpg'
+import headshot02 from '../images/A2.jpg'
+import headshot03 from '../images/A3.jpg'
+
+
 import resume_pdf from '../resume/resume.pdf'
 import resume_png from '../resume/resume.png'
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+import { Carousel } from "react-responsive-carousel"
+
 
 
 class Main extends React.Component {
@@ -64,9 +76,6 @@ class Main extends React.Component {
           <span className="image main">
             <img src={resume_png} alt="" />
           </span>
-          <span className="image main">
-            <img src={pic02} alt="" />
-          </span>
           {close}
         </article>
 
@@ -79,17 +88,19 @@ class Main extends React.Component {
         >
           <h2 className="major">Media</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <Carousel autoPlay infiniteLoop centerMode>
+              <div>
+                <img alt="" src={headshot02} />
+              </div>
+              <div>
+                <img alt="" src={headshot03} />
+              </div>
+              <div>
+                <img alt="" src={headshot01} />
+              </div>
+            </Carousel>
           </span>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
-          </p>
+            
           {close}
         </article>
 
@@ -104,6 +115,9 @@ class Main extends React.Component {
           <p>
             Email me at <a href="mailto:alex.wade13@gmail.com" target="_blank">alex.wade13@gmail.com</a>!
           </p>
+          <span className="image main">
+            <img src={pic02} alt="" />
+          </span>
           {close}
         </article>
       </div>

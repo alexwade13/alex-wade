@@ -2,6 +2,12 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import pic01 from '../images/A1.jpg'
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
@@ -23,6 +29,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              topFunction()
               props.onOpenArticle('intro')
             }}
           >
@@ -32,6 +39,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              topFunction()
               props.onOpenArticle('work')
             }}
           >
@@ -41,6 +49,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              topFunction()
               props.onOpenArticle('about')
             }}
           >
@@ -50,6 +59,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              topFunction()
               props.onOpenArticle('contact')
             }}
           >
