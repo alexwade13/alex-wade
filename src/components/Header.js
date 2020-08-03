@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/A1.jpg'
+import pic01 from '../images/A2.jpg'
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
