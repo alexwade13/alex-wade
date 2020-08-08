@@ -3,7 +3,6 @@ import React from 'react'
 
 import pic01 from '../images/monkey_alex.jpg'
 import pic02 from '../images/turkish_soldier.jpg'
-import pic03 from '../images/pic03.jpg'
 
 import headshot01 from '../images/A1.jpg'
 import headshot02 from '../images/A2.jpg'
@@ -48,7 +47,7 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Hi, I'm Alex Wade! New York city based actor, web developer, and Harry Potter impersonator. 
+            Hey, I'm Alex Wade! New York city based actor, web developer, and Harry Potter impersonator. 
             I went to Bucknell University and took classes with Gary Grant and Anjalee Hutchinson.
             Additionally, I've taken classes at The Acting Studio with James Price, Rodney Ferrer, and many more.
           </p>
