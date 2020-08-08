@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/searchh"
+  from = "/search"
   to = "https://peaceful-roentgen-29890f.netlify.app"
   status = 301
   force = true # COMMENT: ensure that we always redirect
