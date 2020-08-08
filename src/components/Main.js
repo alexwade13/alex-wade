@@ -71,7 +71,7 @@ class Main extends React.Component {
           style={{ display: 'none' }}
         >
           <h2 className="major">Resume</h2>
-          <a href={resume_pdf} target="_blank" download>Download</a>
+          <a href={resume_pdf} target="_blank" rel="noreferrer" download="Alex Wade - Resume">Download</a>
           <span className="image main">
             <img src={resume_png} alt="" />
           </span>
