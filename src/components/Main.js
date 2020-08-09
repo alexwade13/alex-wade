@@ -14,7 +14,7 @@ import resume_png from '../resume/resume.png'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-import { Carousel } from "react-responsive-carousel"
+import { Carousel } from 'react-responsive-carousel'
 
 
 
@@ -99,7 +99,19 @@ class Main extends React.Component {
               </div>
             </Carousel>
           </span>
-            
+          <h3 className="major">Reel</h3>
+          <div className="aspect-ratio">
+            <iframe 
+              src="https://drive.google.com/file/d/1EFHu_0SdAIkleF-eGVGhZFf3nZs7rGdE/preview" 
+              className="video"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              frameBorder="0"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              allowFullScreen="true"
+              >
+            </iframe>            
+          </div>
           {close}
         </article>
 
