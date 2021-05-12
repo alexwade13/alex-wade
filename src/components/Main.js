@@ -91,13 +91,7 @@ class Main extends React.Component {
           <span className="image main">
             <Carousel autoPlay infiniteLoop centerMode>
               <div>
-                <img alt="" src={headshot02} />
-              </div>
-              <div>
-                <img alt="" src={headshot03} />
-              </div>
-              <div>
-                <img alt="" src={headshot01} />
+                <img alt="" src={headshot06} />
               </div>
               <div>
                 <img alt="" src={headshot04} />
@@ -106,7 +100,13 @@ class Main extends React.Component {
                 <img alt="" src={headshot05} />
               </div>
               <div>
-                <img alt="" src={headshot06} />
+                <img alt="" src={headshot02} />
+              </div>
+              <div>
+                <img alt="" src={headshot03} />
+              </div>
+              <div>
+                <img alt="" src={headshot01} />
               </div>
             </Carousel>
           </span>
