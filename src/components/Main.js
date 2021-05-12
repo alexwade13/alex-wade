@@ -7,7 +7,9 @@ import pic02 from '../images/turkish_soldier.jpg'
 import headshot01 from '../images/A1.jpg'
 import headshot02 from '../images/A2.jpg'
 import headshot03 from '../images/A3.jpg'
-
+import headshot04 from '../images/A4.jpg'
+import headshot05 from '../images/A5.jpg'
+import headshot06 from '../images/A6.jpg'
 
 import resume_pdf from '../resume/resume.pdf'
 import resume_png from '../resume/resume.png'
@@ -96,6 +98,15 @@ class Main extends React.Component {
               </div>
               <div>
                 <img alt="" src={headshot01} />
+              </div>
+              <div>
+                <img alt="" src={headshot04} />
+              </div>
+              <div>
+                <img alt="" src={headshot05} />
+              </div>
+              <div>
+                <img alt="" src={headshot06} />
               </div>
             </Carousel>
           </span>
